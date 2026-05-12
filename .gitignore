@@ -46,3 +46,6 @@ build/
 
 # Sensitive user credentials
 users.txt
+
+# Important notes directory (local only)
+_IMPORTANT NOTES/
