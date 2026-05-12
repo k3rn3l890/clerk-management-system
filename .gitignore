@@ -49,3 +49,6 @@ users.txt
 
 # Important notes directory (local only)
 _IMPORTANT NOTES/
+
+# Context documentation (local only)
+context.md
