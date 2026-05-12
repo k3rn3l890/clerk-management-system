@@ -45,9 +45,9 @@ A comprehensive court management system for Ghanaian courts built with HTML, CSS
 
 ## Project Progress
 
-### ✅ Completed Features
+### Completed Features
 
-- **Automated Installation System**: All-in-one installer (`automated_installer.php`) that handles:
+- **Automated Installation System**: All-in-one installer (`http://localhost/clerk_mgmt1/automated_installer.php`) that handles:
   - Environment checks and requirements validation
   - Composer dependency installation (PDF libraries: `tecnickcom/tcpdf`, `setasign/fpdi`, `setasign/fpdi-tcpdf`)
   - Database schema creation from `court_db.sql`
@@ -80,7 +80,7 @@ A comprehensive court management system for Ghanaian courts built with HTML, CSS
   - MySQL database with comprehensive schema
   - RESTful API endpoints for key functionalities
 
-### 🔧 Technical Improvements
+### Technical Improvements
 
 - **Enhanced Installer**: Integrated admin password management into automated installer
 - **Database Fixes**: Resolved "No database selected" import errors
@@ -142,14 +142,14 @@ That's it! The automated installer handles everything else.
    ```
    
    **The automated installer will:**
-   - ✅ Check system environment and requirements
-   - ✅ Install Composer dependencies (PDF libraries, etc.)
-   - ✅ Create database schema from `court_db.sql`
-   - ✅ Execute all migration scripts
-   - ✅ Run setup scripts for additional features
-   - ✅ Create and configure admin user
-   - ✅ Reset admin password to ensure access
-   - ✅ Generate comprehensive installation report
+   - Check system environment and requirements
+   - Install Composer dependencies (PDF libraries, etc.)
+   - Create database schema from `court_db.sql`
+   - Execute all migration scripts
+   - Run setup scripts for additional features
+   - Create and configure admin user
+   - Reset admin password to ensure access
+   - Generate comprehensive installation report
 
 5. **Access the System**
    - **Login URL**: `http://localhost/clerk_mgmt1/login.php`
