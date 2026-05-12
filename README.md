@@ -171,8 +171,3 @@ The document viewing system provides a secure, browser-based solution for viewin
 - Configure watermark template
 - Set download link expiration time
 
-----------------------------------------------
-Users
-admin	
-admin123
-----------------------------------------------
