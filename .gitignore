@@ -46,3 +46,12 @@ build/
 
 # Sensitive user credentials
 users.txt
+
+# Important notes directory (local only)
+_IMPORTANT NOTES/
+
+# Context documentation (local only)
+context.md
+
+# PHP files list (local only)
+php_files_list.txt

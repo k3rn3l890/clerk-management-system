@@ -12,9 +12,9 @@ Edit the `config/config.php` file and update the following email settings:
 // Email configuration
 define('MAIL_HOST', 'smtp.gmail.com'); // Change to your SMTP server
 define('MAIL_PORT', 587); // Change to your SMTP port
-define('MAIL_USERNAME', 'crimrapheal@gmail.com'); // Change to your email
-define('MAIL_PASSWORD', 'Rsa0548146484'); // Change to your email password/app password
-define('MAIL_FROM_EMAIL', 'raphealadjei007@gmail.com'); // Change to your email
+define('MAIL_USERNAME', ''); // Change to your email
+define('MAIL_PASSWORD', ''); // Change to your email password/app password
+define('MAIL_FROM_EMAIL', ''); // Change to your email
 define('MAIL_FROM_NAME', 'Ghana Court Clerk Management System');
 define('MAIL_ENCRYPTION', 'tls'); // or 'ssl'
 define('MAIL_ENABLED', true); // Set to false to disable email functionality
@@ -148,16 +148,7 @@ If you encounter issues with email setup:
 3. Test with a simple PHP mail script
 4. Contact your hosting provider for SMTP support
 
-## Email Features Implemented
 
-- ✅ Welcome email for new users
-- ✅ Password reset emails
-- ✅ Notification emails
-- ✅ HTML email templates
-- ✅ Error handling and logging
-- ✅ Configurable SMTP settings
-- ✅ Email validation
-- ✅ Professional email design
 
 
 
