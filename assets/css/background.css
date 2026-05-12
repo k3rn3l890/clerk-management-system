@@ -1,0 +1,29 @@
+/* Ghana Court Clerk Management System Background Styles */
+
+/* Background Image Styles */
+.ghana-background {
+    position: relative;
+}
+
+.ghana-background::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/Coat_of_arms_of_Ghana.svg');
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-attachment: fixed;
+    background-size: 650px;
+    opacity: 0.3;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Login Page Specific Background */
+.login-background::before {
+    background-size: 500px; /* Increased from 350px */
+    opacity: 0.3; /* Increased from 0.2 */
+}

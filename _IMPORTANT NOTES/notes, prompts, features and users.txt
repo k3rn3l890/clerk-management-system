@@ -1,0 +1,152 @@
+Act as a senior full stack developer and create a comprehensive court clerk management system for a ghanaian court. I want you to build this system using this stack; HTML,CSS, javascript, bootstrap and php. I would like to connect it to an sql database using xammp too as well. 
+
+
+These are the users and features I want to implement for the system:
+
+A. Internal Court Users (Primarily Staff ):
+
+1.  Court Clerks:
+    Who: These are the primary users and would include various levels of clerks
+    Why & What Access: They need comprehensive access to manage the lifecycle of cases.
+    Functions: Initiating new cases, updating case information, managing electronic documents (uploading, viewing), scheduling hearings, sending out electronic notices, recording court fees/fines, generating simple reports on the go, internal messaging with judges or other staff.
+
+2.  Judges:
+    Who: Judicial officers presiding over cases.
+    Why & What Access: To access case files, dockets, and manage their schedules efficiently.
+    Functions: Viewing case files and documents, managing personal court calendars, secure communication with clerks.
+
+
+3.  Judicial Secretary & Court Administrators/Managers:
+    Who: Senior administrative staff responsible for the overall management and operational efficiency of the courts.
+    Why & What Access: For oversight, performance monitoring, generating reports, and administrative functions.
+    Functions: Viewing dashboards with court performance statistics, accessing reports, broadcasting important notices to court staff.
+
+4.  IT Administrators / System Support Staff:
+    Who: Technical staff responsible for maintaining the application.
+    Why & What Access: Full system access for maintenance, troubleshooting, user management, and security monitoring.
+    Functions: Monitoring system health, managing user accounts (e.g., password resets for urgent cases), receiving system alerts.
+
+
+
+
+
+B. External Users (Interacting with the Court):
+
+1.  Lawyers (Members of the Ghana Bar Association):
+    Who: Legal practitioners representing clients.
+    Why & What Access: To file documents, track their cases, and receive notifications.
+    Functions: E-filing of documents, viewing case status and history for their specific cases, receiving court schedule notifications, accessing calendars for their cases, secure communication with the court registry on case-specific matters.
+
+
+2. Litigants / Public Users (Citizens):
+   Who: Individuals who are parties to a case, or the general public seeking information.
+   Why & What Access: Limited, secure access to their own case information or general public information.
+   Functions: Checking the status of their own case (with secure login), viewing hearing dates for their case.
+
+
+
+
+
+
+
+
+
+############################################################
+INTERNAL USERS
+----------------
+admin
+admin123
+
+
+========================
+CLERK
+monica123
+monica123!
+========================
+JUDGE
+eddison123
+eddison123!
+========================
+ADMINISTRATOR
+salam123
+salam123!
+========================
+
+// don't use for now till debug
+IT ADMINISTRATOR
+eben123
+eben123! 
+========================
+
+############################################################
+EXTERNAL USERS
+----------------
+LAWYER
+jibril123
+jibril123!
+Bar Number: 0122334455006D
+Law Firm: Shaw's & Bells Law Firm
+Specialization: Defense Attorney
+========================
+LITIGANT
+isaac123
+isaac123!
+========================
+
+
+
+
+----
+
+Next Steps
+To complete the system, you would need to implement:
+
+Case editing and updating functionality
+Hearing editing and detailed view
+Document viewing and download functionality
+Payment management system
+Reporting and analytics features
+User profile management
+Messaging system between users
+Notification management
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A. Internal Court Users (Primarily Staff ):
+
+1.  Court Clerks:
+    Who: These are the primary users and would include various levels of clerks
+    Why & What Access: They need comprehensive access to manage the lifecycle of cases.
+    Functions: Initiating new cases, updating case information, managing electronic documents (uploading, viewing), scheduling hearings, sending out electronic notices, recording court fees/fines, generating simple reports on the go, internal messaging with judges or other staff.
+
+2.  Judges:
+    Who: Judicial officers presiding over cases.
+    Why & What Access: To access case files, dockets, and manage their schedules efficiently.
+    Functions: Viewing case files and documents, managing personal court calendars, secure communication with clerks.
+
+
+3.  Judicial Secretary & Court Administrators/Managers:
+    Who: Senior administrative staff responsible for the overall management and operational efficiency of the courts.
+    Why & What Access: For oversight, performance monitoring, generating reports, and administrative functions.
+    Functions: Viewing dashboards with court performance statistics, accessing reports, broadcasting important notices to court staff.
+
+4.  IT Administrators / System Support Staff:
+    Who: Technical staff responsible for maintaining the application.
+    Why & What Access: Full system access for maintenance, troubleshooting, user management, and security monitoring.
+    Functions: Monitoring system health, managing user accounts (e.g., password resets for urgent cases), receiving system alerts.
+
+
+
+
+
+B. External Users (Interacting with the Court):
+
+1.  Lawyers (Members of the Ghana Bar Association):
+    Who: Legal practitioners representing clients.
+    Why & What Access: To file documents, track their cases, and receive notifications.
+    Functions: E-filing of documents, viewing case status and history for their specific cases, receiving court schedule notifications, accessing calendars for their cases, secure communication with the court registry on case-specific matters.
+
+
+2. Litigants / Public Users (Citizens):
+   Who: Individuals who are parties to a case, or the general public seeking information.
+   Why & What Access: Limited, secure access to their own case information or general public information.
+   Functions: Checking the status of their own case (with secure login), viewing hearing dates for their case.
+

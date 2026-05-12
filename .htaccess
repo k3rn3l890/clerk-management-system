@@ -1,0 +1,42 @@
+# Set proper MIME types
+AddType application/pdf .pdf
+
+# Force PDF files to display inline in browser
+<FilesMatch "\.pdf$">
+    Header set Content-Disposition "inline"
+    Header set X-Content-Type-Options "nosniff"
+</FilesMatch>
+
+# Allow cross-origin requests for PDF.js
+<IfModule mod_headers.c>
+    <FilesMatch "\.pdf$">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+    
+    # Set proper headers for serve_pdf.php
+    <FilesMatch "serve_pdf\.php$">
+        Header set X-Content-Type-Options "nosniff"
+    </FilesMatch>
+</IfModule>
+
+# Enable compression for PDF files
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE application/pdf
+</IfModule>
+
+# Set caching for PDF files
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType application/pdf "access plus 1 month"
+</IfModule>
+
+# PHP settings
+<IfModule mod_php7.c>
+    php_value output_buffering Off
+    php_value zlib.output_compression Off
+</IfModule>
+
+# Disable ETags for PDFs
+<FilesMatch "\.pdf$">
+    FileETag None
+</FilesMatch> 

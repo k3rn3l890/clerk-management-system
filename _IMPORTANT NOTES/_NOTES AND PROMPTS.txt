@@ -1,0 +1,32 @@
+Act as a senior full stack developer and create an advanced, sophisticated, professional, world-class and UI rich, web-based Pension Enrollment System project for a Ghanaian company known as Petra. I want you to build this system using this stack; HTML,CSS, Javascript, bootstrap,php and MySQL. I would like to connect it to an sql database using xampp too as well.  Build the database of this system in only SQL.
+
+Act as a senior full stack developer and create an advanced, sophisticated, professional, world-class and UI rich, web-based Pension Enrollment System project for a Ghanaian company known as Petra. I want you to build this system using this stack; HTML,CSS, Javascript, bootstrap, php and MySQL. I would like to connect it to an sql database using xampp too as well.  Build the database of this system in only SQL.
+
+
+
+(INTERNAL USER OF THE SYSTEM)
+A. Administrator:
+Who: Authorized personnel, such as pension office staff.
+Roles: System manager, Overseer of pension records and updates
+Functions: Access admin dashboard, (View, create, update, and delete pensioner records), Monitor system status and alerts, verify pensioner submissions
+
+
+
+(EXTERNAL USER OF THE SYSTEM)
+B. Pensioner/User:
+Who: Retired individuals applying for or managing their pension.
+Roles: System user, Submitter of personal pension information
+Functions: Fill out enrollment forms, Submit personal and financial data for pension, Possibly check application status and get notifications
+
+
+
+The Pensioner/User side should have these pages and a next button and a previous button that would allow the users to navigate the wizard pages when enrolling into the scheme or filling the forms:
+A. An appropriate dashboard page which should contain an enroll button to enroll users onto the pension scheme.
+1. Personal Information, page where user enters these details: First Name, Last Name, Date of Birth, Email Address, Phone Number, Address, City, Ghana Card Number.
+2. Company Details page, where user enters the details of his/her these details: Company Name, Employee ID, Department, Position/Title, Employment Start Date, Annual Salary
+3. Pension Options page, where user selects the  pension contribution options: Petra Advantage Pension Scheme, Petra Opportunity Pension Scheme
+4. Photo ID page, where user takes a photo of their government-issued ID: Government-Issued ID Photo, Ghana Card Verification
+5. Review & Submit page: where user can Review the information before submitting.
+
+
+

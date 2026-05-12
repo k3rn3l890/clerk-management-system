@@ -1,0 +1,45 @@
+# Sensitive configuration files
+config/config.php
+config/database.php
+.env
+
+# Upload directories
+uploads/*
+storage/*
+!uploads/.gitkeep
+!storage/.gitkeep
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Composer
+vendor/
+composer.lock
+
+# Test files
+test*.pdf
+test_*.php
+
+# Database backups
+*.sql
+*.db
+
+# Node modules (if any)
+node_modules/
+
+# Build files
+dist/
+build/

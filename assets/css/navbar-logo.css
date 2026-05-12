@@ -1,0 +1,25 @@
+/* Custom styles for the navbar logo */
+.navbar-logo {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    background-image: url('../images/Coat_of_arms_of_Ghana.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+}
+
+/* Adjust for login page */
+.login-logo {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-image: url('../images/Coat_of_arms_of_Ghana.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+}
