@@ -66,11 +66,7 @@ A comprehensive court management system for Ghanaian courts built with HTML, CSS
    - Create admin user if needed
 4. Access the system at `http://localhost/clerk_mgmt1`
 
-## Login Credentials
 
-Default admin credentials:
-- Username: admin
-- Password: admin123
 
 ## Technology Stack
 
