@@ -45,7 +45,7 @@ A comprehensive court management system for Ghanaian courts built with HTML, CSS
 
 ## Project Progress
 
-- Implemented an automated installation script (`automated_installer.php`) that handles environment checks, Composer dependency installation (including PDF watermarking libraries like `tecnickcom/tcpdf`, `setasign/fpdi`, and `setasign/fpdi-tcpdf`), database schema creation from `court_db.sql`, execution of various migration and setup scripts (e.g., table creations, data migrations, fixes), and automatic admin user creation.
+- Implemented an automated installation script (`http://localhost/clerk_mgmt1/automated_installer.php`) that handles environment checks, Composer dependency installation (including PDF watermarking libraries like `tecnickcom/tcpdf`, `setasign/fpdi`, and `setasign/fpdi-tcpdf`), database schema creation from `court_db.sql`, execution of various migration and setup scripts (e.g., table creations, data migrations, fixes), and automatic admin user creation.
 - Enhanced document tracking feature with geolocation tracking, access logging, and map visualization using Leaflet.js.
 - Added secure document viewing with browser-based PDF viewer, annotations, version control, and watermarking.
 - Verified the automated installer for syntax and logic to ensure error-free setup on new systems.
