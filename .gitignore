@@ -55,3 +55,30 @@ context.md
 
 # PHP files list (local only)
 php_files_list.txt
+
+# Installation and setup files (potential vulnerabilities)
+automated_installer.php
+super_installer.php
+create_admin.php
+reset_admin.php
+check_admin.php
+test_db.php
+*_installer.php
+*_setup.php
+*_config.php
+
+# Temporary setup files
+create_document_tracking.php
+court_db_clean.sql
+court_db_fixed.sql
+*_copy_*.sql
+
+# Debug and development files
+debug*.php
+test*.php
+temp*.php
+backup*.php
+
+# Sensitive database files with credentials
+*infinityfree*.sql
+*production*.sql

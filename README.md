@@ -188,13 +188,115 @@ Both methods will reset admin credentials to:
 - Username: `admin`
 - Password: `admin123`
 
-### Troubleshooting
+### Manual Admin User Creation
+
+If the automated installer fails or admin login doesn't work, you can manually create an admin user:
+
+#### Method 1: Create Admin Script
+
+1. **Create `create_admin.php`** in your root directory with this content:
+```php
+<?php
+require_once 'config/database.php';
+
+// Database connection
+$db = new Database();
+$connection = $db->getConnection();
+
+// Delete any existing admin and create new one
+$connection->exec("DELETE FROM users WHERE username = 'admin'");
+
+$hashedPassword = password_hash('admin123', PASSWORD_DEFAULT);
+$stmt = $connection->prepare("INSERT INTO users (username, password, email, first_name, last_name, role, status) VALUES (?, ?, ?, ?, ?, ?, ?)");
+$stmt->execute(['admin', $hashedPassword, 'admin@court.gov.gh', 'System', 'Administrator', 'admin', 'active']);
+
+echo "New admin user created successfully!<br>";
+echo "Username: admin<br>";
+echo "Password: admin123<br>";
+echo "<a href='login.php'>Click here to login</a>";
+?>
+```
+
+2. **Access the script**: `https://yourdomain.com/create_admin.php`
+
+#### Method 2: Direct Database Access
+
+1. **Access phpMyAdmin** in your hosting control panel
+2. **Select your database**
+3. **Run this SQL query**:
+```sql
+DELETE FROM users WHERE username = 'admin';
+INSERT INTO users (username, password, email, first_name, last_name, role, status) 
+VALUES ('admin', '$2y$10$8zf0SXIrLBRUQ5dUJwdw8.XZNm5zSJU0Vd.lOZJj.fRXIXVxjUMmK', 'admin@court.gov.gh', 'System', 'Administrator', 'admin', 'active');
+```
+
+**After creating admin user, you can login with:**
+- Username: `admin`
+- Password: `admin123`
+
+### Standalone Installer (Recommended)
+
+The **standalone_installer.php** is the recommended method for complete system setup. It provides a single-file solution that handles all installation and configuration tasks.
+
+#### Features
+
+- **Single File Installation**: No need to run multiple scripts
+- **Professional Interface**: Clean, business-appropriate design
+- **Comprehensive Setup**: Handles all database tables, admin user, and system configuration
+- **Error Handling**: Smart detection of existing tables and configurations
+- **Self-Contained**: No external dependencies that might cause redirects
+
+#### Installation Steps
+
+1. **Access the Installer**:
+   ```
+   http://localhost/clerk_mgmt1/standalone_installer.php
+   ```
+
+2. **Follow the On-Screen Instructions**:
+   - Step 1: Environment Check
+   - Step 2: Database Configuration
+   - Step 3: Core Database Schema
+   - Step 4: Document Tracking Tables
+   - Step 5: Admin User Management
+   - Step 6: System Configuration
+   - Step 7: Directory Permissions
+
+3. **Login After Installation**:
+   - URL: `http://localhost/clerk_mgmt1/login.php`
+   - Username: `admin`
+   - Password: `admin123`
+
+#### What the Installer Does
+
+- **Database Setup**: Creates all required tables with proper relationships
+- **Document Tracking**: Sets up document versioning, annotations, and access logging
+- **Admin User**: Creates or resets admin account with secure password
+- **System Settings**: Configures default court system settings
+- **Directory Structure**: Creates necessary upload directories
+- **Error Recovery**: Handles existing installations gracefully
+
+#### For Production Deployment
+
+1. **Upload** `standalone_installer.php` to your hosting root directory
+2. **Access** via your domain: `https://yourdomain.com/standalone_installer.php`
+3. **Delete** the installer file after successful installation for security
+
+#### Status Indicators
+
+The installer uses professional status indicators:
+- `[OK]` - Successful operation
+- `[ERROR]` - Critical error (installation stops)
+- `[WARNING]` - Non-critical issue (installation continues)
+- `[INFO]` - Informational message
+
+#### Troubleshooting
 
 **Common Issues:**
-- **"No database selected" error**: Run automated installer (it fixes database creation)
-- **Login fails**: Re-run installer to reset admin password
-- **Composer errors**: Ensure XAMPP PHP is in system PATH
-- **Permission errors**: Run XAMPP as administrator
+- **"No database selected" error**: Run standalone installer (it fixes database creation)
+- **Login fails**: Re-run standalone installer to reset admin password
+- **SQL syntax errors**: Installer handles these automatically by cleaning schema file
+- **"Table already exists" warnings**: Normal for re-installations
 
 **Database Connection Issues:**
 - Verify MySQL service is running in XAMPP Control Panel
